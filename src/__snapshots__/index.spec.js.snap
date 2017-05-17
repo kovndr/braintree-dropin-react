@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BraintreeDropin /> should render 1`] = `
+<div
+  className="braintree-dropin-react"
+>
+  <div
+    className="braintree-dropin-react-form"
+  />
+  <div
+    className="braintree-dropin-react-submit-btn-wrapper"
+  >
+    <button
+      disabled={true}
+      onClick={[Function]}
+    >
+      TEXT
+    </button>
+  </div>
+</div>
+`;
