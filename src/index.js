@@ -127,7 +127,7 @@ class BraintreeDropIn extends React.Component {
       <div className={this.props.className}>
         <div className='braintree-dropin-react-form' />
         <div className='braintree-dropin-react-submit-btn-wrapper'>
-          {this.props.renderButton({
+          {this.props.renderSubmitButton({
             onClick: this.handleSubmit,
             isDisabled: this.state.isSubmitButtonDisabled,
             text: this.props.submitButtonText
@@ -152,10 +152,10 @@ BraintreeDropIn.propTypes = {
   paymentOptionPriority: PropTypes.array,
   submitButtonText: PropTypes.string,
   className: PropTypes.string,
-  renderButton: PropTypes.func
+  renderSubmitButton: PropTypes.func
 }
 
-const renderButton = ({onClick, isDisabled, text}) => {
+const renderSubmitButton = ({onClick, isDisabled, text}) => {
   return (
     <button
       onClick={onClick}
@@ -164,7 +164,7 @@ const renderButton = ({onClick, isDisabled, text}) => {
   )
 }
 
-renderButton.propTypes = {
+renderSubmitButton.propTypes = {
   onClick: PropTypes.func.isRequired,
   isDisabled: PropTypes.bool.isRequired,
   text: PropTypes.string.isRequired
@@ -173,7 +173,7 @@ renderButton.propTypes = {
 BraintreeDropIn.defaultProps = {
   className: 'braintree-dropin-react',
   submitButtonText: 'Purchase',
-  renderButton
+  renderSubmitButton
 }
 
 export default BraintreeDropIn
