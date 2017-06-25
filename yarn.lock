@@ -2,6 +2,18 @@
 # yarn lockfile v1
 
 
+"@braintree/browser-detection@1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@braintree/browser-detection/-/browser-detection-1.4.1.tgz#30b8655dd79bc1d125324a8a69d5a8f8adb20bb3"
+
+"@braintree/iframer@1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@braintree/iframer/-/iframer-1.0.3.tgz#21dd1fd4cebd4154aeab1efa4d5b0d5f4384364e"
+
+"@braintree/wrap-promise@1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@braintree/wrap-promise/-/wrap-promise-1.1.1.tgz#d22c76855e6d4b4012610060421fae1a37ec90b0"
+
 abab@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/abab/-/abab-1.0.3.tgz#b81de5f7274ec4e756d797cd834f303642724e5d"
@@ -826,35 +838,31 @@ braces@^1.8.2:
     preserve "^0.2.0"
     repeat-element "^1.1.2"
 
-braintree-web-drop-in@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/braintree-web-drop-in/-/braintree-web-drop-in-1.0.2.tgz#b68e1b962e33c11682ed2ccb91644f0ed2977d0e"
+braintree-web-drop-in@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/braintree-web-drop-in/-/braintree-web-drop-in-1.3.1.tgz#199b5c19a223a8750559e8dd9036f5d1e9a76d24"
   dependencies:
-    braintree-web "3.15.0"
-    browser-detection braintree/browser-detection#1.1.0
+    "@braintree/browser-detection" "1.4.1"
+    braintree-web "3.19.0"
     promise-polyfill "6.0.2"
 
-braintree-web@3.15.0:
-  version "3.15.0"
-  resolved "https://registry.yarnpkg.com/braintree-web/-/braintree-web-3.15.0.tgz#bdbd8d25e617980a5b95cb2c95692719cd588b78"
+braintree-web@3.19.0:
+  version "3.19.0"
+  resolved "https://registry.yarnpkg.com/braintree-web/-/braintree-web-3.19.0.tgz#5b8fd5066bcf9e850d8b9e246ef00cae399433ba"
   dependencies:
-    browser-detection braintree/browser-detection#1.1.0
-    card-validator "4.0.0"
-    credit-card-type "5.0.1"
+    "@braintree/browser-detection" "1.4.1"
+    "@braintree/iframer" "1.0.3"
+    "@braintree/wrap-promise" "1.1.1"
+    card-validator "4.1.0"
+    credit-card-type "5.0.2"
     framebus "2.0.8"
-    iframer braintree/iframer.git#1.0.2
     inject-stylesheet "1.0.0"
     promise-polyfill "6.0.2"
-    restricted-input "1.2.0"
-    wrap-promise braintree/wrap-promise#1.1.0
+    restricted-input "1.2.4"
 
 brorand@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/brorand/-/brorand-1.1.0.tgz#12c25efe40a45e3c323eb8675a0a0ce57b22371f"
-
-browser-detection@braintree/browser-detection#1.1.0:
-  version "1.1.0"
-  resolved "https://codeload.github.com/braintree/browser-detection/tar.gz/edd25bdcec30f1f489a62da28291c0bd0990cd54"
 
 browser-resolve@^1.11.2:
   version "1.11.2"
@@ -975,9 +983,9 @@ camelcase@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-3.0.0.tgz#32fc4b9fcdaf845fcdf7e73bb97cac2261f0ab0a"
 
-card-validator@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/card-validator/-/card-validator-4.0.0.tgz#f054ab0f407693fc0ced073f4092e35f53c339c8"
+card-validator@4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/card-validator/-/card-validator-4.1.0.tgz#1d60ef09dad06432e6c2c0bbc63383ffc126b0e8"
   dependencies:
     credit-card-type "^5.0.0"
 
@@ -1226,9 +1234,9 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-credit-card-type@5.0.1, credit-card-type@^5.0.0:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/credit-card-type/-/credit-card-type-5.0.1.tgz#0e35efa17c7d36ea44c659de992b1d13072a587b"
+credit-card-type@5.0.2, credit-card-type@^5.0.0:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/credit-card-type/-/credit-card-type-5.0.2.tgz#c6fa93830cbfdfc2b53b9e849d019c48f2884da3"
 
 cryptiles@2.x.x:
   version "2.0.5"
@@ -2343,10 +2351,6 @@ iconv-lite@~0.4.13:
 ieee754@^1.1.4:
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.1.8.tgz#be33d40ac10ef1926701f6f08a2d86fbfd1ad3e4"
-
-iframer@braintree/iframer.git#1.0.2:
-  version "1.0.2"
-  resolved "https://codeload.github.com/braintree/iframer/tar.gz/2f6618e30dca02c8a4c4c8419568ae7cfca683d4"
 
 ignore@^3.0.11, ignore@^3.2.0:
   version "3.3.0"
@@ -3970,11 +3974,11 @@ restore-cursor@^1.0.1:
     exit-hook "^1.0.0"
     onetime "^1.0.0"
 
-restricted-input@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/restricted-input/-/restricted-input-1.2.0.tgz#bed4d21e1e773f0809513db53f30bf0cb0c0c7f7"
+restricted-input@1.2.4:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/restricted-input/-/restricted-input-1.2.4.tgz#9311e208253c191d3284b58dcdf66283c3031c2d"
   dependencies:
-    browser-detection braintree/browser-detection#1.1.0
+    "@braintree/browser-detection" "1.4.1"
 
 right-align@^0.1.1:
   version "0.1.3"
@@ -4711,10 +4715,6 @@ wrap-ansi@^2.0.0:
   dependencies:
     string-width "^1.0.1"
     strip-ansi "^3.0.1"
-
-wrap-promise@braintree/wrap-promise#1.1.0:
-  version "1.1.0"
-  resolved "https://codeload.github.com/braintree/wrap-promise/tar.gz/daa66452aa0d6fe9559be68e34e880ec52e8bf1f"
 
 wrappy@1:
   version "1.0.2"

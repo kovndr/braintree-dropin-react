@@ -1,7 +1,23 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import braintree from 'braintree-web-drop-in'
+import PropTypes from 'prop-types'
 import BraintreeDropin from '../index'
+
+const renderSubmitButton = ({onClick, isDisabled, text}) => {
+  return (
+    <button
+      onClick={onClick}
+      disabled={isDisabled}
+    >{text}</button>
+  )
+}
+
+renderSubmitButton.propTypes = {
+  onClick: PropTypes.func.isRequired,
+  isDisabled: PropTypes.bool.isRequired,
+  text: PropTypes.string.isRequired
+}
 
 class ExampleComponent extends React.Component {
   handlePaymentMethod = (payload) => {
@@ -36,6 +52,7 @@ class ExampleComponent extends React.Component {
           onDestroyStart={this.onDestroyStart}
           onDestroyEnd={this.onDestroyEnd}
           onError={this.onError}
+          renderSubmitButton={renderSubmitButton}
         />
       </div>
     )

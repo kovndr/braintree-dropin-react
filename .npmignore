@@ -68,3 +68,6 @@ example/bundle.js
 .eslintrc
 npm-debug.log
 lib
+src/
+webpack.config.js
+example/
