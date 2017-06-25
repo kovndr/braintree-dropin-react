@@ -21,6 +21,8 @@ https://developers.braintreepayments.com/guides/drop-in/javascript/v3
 * paypalCredit - [see in DOC](https://developers.braintreepayments.com/guides/drop-in/javascript/v3#accepting-paypal-credit)
 * paymentOptionPriority - [see in DOC](https://developers.braintreepayments.com/guides/drop-in/javascript/v3#payment-option-priority)
 * submitButtonText - Text of the submit button
+* className - CSS class for the outer container (defaults to `braintree-dropin-react`)
+* renderSubmitButton - Use a custom component for the submit button. Takes props `onClick`, `isDisabled` and `text`
 
 ### Installation
 
@@ -46,4 +48,18 @@ div.braintree-dropin-react
   div.braintree-dropin-react-form
   div.braintree-dropin-react-submit-btn-wrapper
     button
+```
+
+#### Styled Components
+
+Compatible with [styled-components](https://github.com/styled-components/styled-components).
+
+```js
+const MyBraintreeDropin = styled(BraintreeDropin)`
+  padding: 20px;
+  .braintree-dropin-react-submit-btn-wrapper {
+    padding: 10px;
+    background-color: #eee;
+  }
+`;
 ```
