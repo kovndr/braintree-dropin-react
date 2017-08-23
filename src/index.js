@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 class BraintreeDropIn extends React.Component {
+
   constructor (props) {
     super(props)
     this.state = {
@@ -110,8 +111,14 @@ class BraintreeDropIn extends React.Component {
   }
 
   handleSubmit = (event) => {
+    this.setState({
+      isSubmitButtonDisabled: true,
+    })
     if (this.state.dropInInstance) {
       this.state.dropInInstance.requestPaymentMethod((err, payload) => {
+        this.setState({
+          isSubmitButtonDisabled: false,
+        })
         if (err) {
           if (this.props.onError) {
             this.props.onError(err)
