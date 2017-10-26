@@ -19,7 +19,7 @@ class BraintreeDropIn extends React.Component {
     if (
       this.props.authorizationToken &&
       this.state.dropInInstance &&
-      prevProps.authorizationToken !== this.props.authorizationToken
+      (prevProps.authorizationToken !== this.props.authorizationToken || prevProps.locale !== this.props.locale)
     ) {
       this.tearDown().then(() => {
         this.setState({
