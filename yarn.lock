@@ -2,13 +2,17 @@
 # yarn lockfile v1
 
 
-"@braintree/browser-detection@1.4.1":
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/@braintree/browser-detection/-/browser-detection-1.4.1.tgz#30b8655dd79bc1d125324a8a69d5a8f8adb20bb3"
+"@braintree/browser-detection@1.7.0", "@braintree/browser-detection@^1.5.0":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@braintree/browser-detection/-/browser-detection-1.7.0.tgz#895ba64b700c3f36cab5c54591caf71a41171dd8"
 
 "@braintree/iframer@1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@braintree/iframer/-/iframer-1.0.3.tgz#21dd1fd4cebd4154aeab1efa4d5b0d5f4384364e"
+
+"@braintree/sanitize-url@2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@braintree/sanitize-url/-/sanitize-url-2.0.2.tgz#2b37caa50687ac47370520a502f5226ee31a5ab1"
 
 "@braintree/wrap-promise@1.1.1":
   version "1.1.1"
@@ -839,26 +843,28 @@ braces@^1.8.2:
     repeat-element "^1.1.2"
 
 braintree-web-drop-in@^1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/braintree-web-drop-in/-/braintree-web-drop-in-1.3.1.tgz#199b5c19a223a8750559e8dd9036f5d1e9a76d24"
+  version "1.9.2"
+  resolved "https://registry.yarnpkg.com/braintree-web-drop-in/-/braintree-web-drop-in-1.9.2.tgz#8d39fcd97ee98363fa6690884009a551f69d701c"
   dependencies:
-    "@braintree/browser-detection" "1.4.1"
-    braintree-web "3.19.0"
+    "@braintree/browser-detection" "1.7.0"
+    "@braintree/wrap-promise" "1.1.1"
+    braintree-web "3.26.0"
     promise-polyfill "6.0.2"
 
-braintree-web@3.19.0:
-  version "3.19.0"
-  resolved "https://registry.yarnpkg.com/braintree-web/-/braintree-web-3.19.0.tgz#5b8fd5066bcf9e850d8b9e246ef00cae399433ba"
+braintree-web@3.26.0:
+  version "3.26.0"
+  resolved "https://registry.yarnpkg.com/braintree-web/-/braintree-web-3.26.0.tgz#97ebc66e0a61f64c429f53f4689fa9f733366f6e"
   dependencies:
-    "@braintree/browser-detection" "1.4.1"
+    "@braintree/browser-detection" "1.7.0"
     "@braintree/iframer" "1.0.3"
+    "@braintree/sanitize-url" "2.0.2"
     "@braintree/wrap-promise" "1.1.1"
-    card-validator "4.1.0"
-    credit-card-type "5.0.2"
+    card-validator "4.1.1"
+    credit-card-type "6.1.0"
     framebus "2.0.8"
     inject-stylesheet "1.0.0"
     promise-polyfill "6.0.2"
-    restricted-input "1.2.4"
+    restricted-input "1.2.7"
 
 brorand@^1.0.1:
   version "1.1.0"
@@ -983,11 +989,11 @@ camelcase@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-3.0.0.tgz#32fc4b9fcdaf845fcdf7e73bb97cac2261f0ab0a"
 
-card-validator@4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/card-validator/-/card-validator-4.1.0.tgz#1d60ef09dad06432e6c2c0bbc63383ffc126b0e8"
+card-validator@4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/card-validator/-/card-validator-4.1.1.tgz#f0683e0f5dbd29c02cfb1a1b665cdba430622faa"
   dependencies:
-    credit-card-type "^5.0.0"
+    credit-card-type "^6.0.0"
 
 caseless@~0.12.0:
   version "0.12.0"
@@ -1234,9 +1240,9 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-credit-card-type@5.0.2, credit-card-type@^5.0.0:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/credit-card-type/-/credit-card-type-5.0.2.tgz#c6fa93830cbfdfc2b53b9e849d019c48f2884da3"
+credit-card-type@6.1.0, credit-card-type@^6.0.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/credit-card-type/-/credit-card-type-6.1.0.tgz#f1acd3d47cf8202a66b60a9c90cbf9738d57ef40"
 
 cryptiles@2.x.x:
   version "2.0.5"
@@ -3974,11 +3980,11 @@ restore-cursor@^1.0.1:
     exit-hook "^1.0.0"
     onetime "^1.0.0"
 
-restricted-input@1.2.4:
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/restricted-input/-/restricted-input-1.2.4.tgz#9311e208253c191d3284b58dcdf66283c3031c2d"
+restricted-input@1.2.7:
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/restricted-input/-/restricted-input-1.2.7.tgz#e1298f5fd8c430cc2d8e6bb1175524023205cb34"
   dependencies:
-    "@braintree/browser-detection" "1.4.1"
+    "@braintree/browser-detection" "^1.5.0"
 
 right-align@^0.1.1:
   version "0.1.3"

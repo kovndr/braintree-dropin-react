@@ -110,15 +110,20 @@ class BraintreeDropIn extends React.Component {
   }
 
   handleSubmit = (event) => {
-    if (this.state.dropInInstance) {
-      this.state.dropInInstance.requestPaymentMethod((err, payload) => {
-        if (err) {
-          if (this.props.onError) {
-            this.props.onError(err)
+    if (this.state.dropInInstance && !this.state.isSubmitButtonDisabled) {
+      this.setState({isSubmitButtonDisabled: true}, () => {
+        this.state.dropInInstance.requestPaymentMethod((err, payload) => {
+          this.setState({
+            isSubmitButtonDisabled: false
+          })
+          if (err) {
+            if (this.props.onError) {
+              this.props.onError(err)
+            }
+          } else {
+            this.props.handlePaymentMethod(payload)
           }
-        } else {
-          this.props.handlePaymentMethod(payload)
-        }
+        })
       })
     }
   }
