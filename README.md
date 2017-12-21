@@ -5,7 +5,7 @@ https://developers.braintreepayments.com/guides/drop-in/javascript/v3
 
 ### Features
 * Wraps the Braintree Drop-In UI V3
-* If ```authorizationToken``` is changed the Drop-In UI will be re-initialized. This is useful if you want to support multiple merchants.
+* If ```authorizationToken``` or ```locale``` is changed the Drop-In UI will be re-initialized. This is useful if you want to support multiple merchants/locales.
 
 ### Props
 
