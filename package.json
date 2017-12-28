@@ -1,6 +1,6 @@
 {
   "name": "braintree-dropin-react",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "React Drop-in Payment UI Component",
   "main": "index.js",
   "scripts": {
@@ -55,7 +55,7 @@
     "webpack": "^2.5.1",
     "webpack-dev-server": "^2.4.5"
   },
-  "dependencies": {
+  "peerDependencies": {
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
