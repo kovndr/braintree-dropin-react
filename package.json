@@ -53,7 +53,8 @@
     "jest": "^22.0.4",
     "react-addons-test-utils": "^15.6.2",
     "react-test-renderer": "^16.2.0",
-    "webpack": "^3.10.0"
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
   },
   "dependencies": {
     "prop-types": "^15.6.0",
