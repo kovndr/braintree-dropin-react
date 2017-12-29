@@ -1,10 +1,13 @@
 /* eslint-disable */
 import 'babel-polyfill'
 import React from 'react'
-import { shallow, mount } from 'enzyme'
+import Enzyme, { shallow, mount } from 'enzyme'
+import Adapter from 'enzyme-adapter-react-16';
 import { shallowToJson } from 'enzyme-to-json'
 import braintree from 'braintree-web-drop-in'
 import BraintreeDropin from '../dist'
+
+Enzyme.configure({ adapter: new Adapter() });
 
 describe('<BraintreeDropin />', () => {
   it('should render', () => {
