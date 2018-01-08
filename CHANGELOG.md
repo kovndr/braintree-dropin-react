@@ -1,3 +1,7 @@
+#### 0.1.0 on January 08 2018
+
+- Use React 16 [#9](https://github.com/kovndr/braintree-dropin-react/pull/9) (safinn)
+
 #### 0.0.3 on December 21 2017
 
 - Recreate drop-in on locale change [#6](https://github.com/kovndr/braintree-dropin-react/pull/6) (mfly)
