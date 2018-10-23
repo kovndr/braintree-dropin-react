@@ -71,9 +71,9 @@
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@braintree/iframer/-/iframer-1.0.3.tgz#21dd1fd4cebd4154aeab1efa4d5b0d5f4384364e"
 
-"@braintree/sanitize-url@2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@braintree/sanitize-url/-/sanitize-url-2.0.2.tgz#2b37caa50687ac47370520a502f5226ee31a5ab1"
+"@braintree/sanitize-url@2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@braintree/sanitize-url/-/sanitize-url-2.1.0.tgz#549a9d1f923c9bc7953a585d3e9aa9429be8fe28"
 
 "@braintree/wrap-promise@1.1.1":
   version "1.1.1"
@@ -1055,28 +1055,28 @@ braces@^1.8.2:
     preserve "^0.2.0"
     repeat-element "^1.1.2"
 
-braintree-web-drop-in@^1.3.1:
-  version "1.9.2"
-  resolved "https://registry.yarnpkg.com/braintree-web-drop-in/-/braintree-web-drop-in-1.9.2.tgz#8d39fcd97ee98363fa6690884009a551f69d701c"
+braintree-web-drop-in@^1.13.0:
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/braintree-web-drop-in/-/braintree-web-drop-in-1.13.0.tgz#985b1cfba355695741d12df78c67b35ba07d2546"
   dependencies:
     "@braintree/browser-detection" "1.7.0"
     "@braintree/wrap-promise" "1.1.1"
-    braintree-web "3.26.0"
-    promise-polyfill "6.0.2"
+    braintree-web "3.37.0"
+    promise-polyfill "8.0.0"
 
-braintree-web@3.26.0:
-  version "3.26.0"
-  resolved "https://registry.yarnpkg.com/braintree-web/-/braintree-web-3.26.0.tgz#97ebc66e0a61f64c429f53f4689fa9f733366f6e"
+braintree-web@3.37.0:
+  version "3.37.0"
+  resolved "https://registry.yarnpkg.com/braintree-web/-/braintree-web-3.37.0.tgz#a948a9f8ec5ce5c31f9f94fdb419da2025253486"
   dependencies:
     "@braintree/browser-detection" "1.7.0"
     "@braintree/iframer" "1.0.3"
-    "@braintree/sanitize-url" "2.0.2"
+    "@braintree/sanitize-url" "2.1.0"
     "@braintree/wrap-promise" "1.1.1"
-    card-validator "4.1.1"
-    credit-card-type "6.1.0"
-    framebus "2.0.8"
+    card-validator "5.0.0"
+    credit-card-type "7.1.0"
+    framebus "3.0.1"
     inject-stylesheet "1.0.0"
-    promise-polyfill "6.0.2"
+    promise-polyfill "8.0.0"
     restricted-input "1.2.7"
 
 brorand@^1.0.1:
@@ -1227,11 +1227,11 @@ caniuse-lite@^1.0.30000780:
   version "1.0.30000784"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000784.tgz#129ced74e9a1280a441880b6cd2bce30ef59e6c0"
 
-card-validator@4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/card-validator/-/card-validator-4.1.1.tgz#f0683e0f5dbd29c02cfb1a1b665cdba430622faa"
+card-validator@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/card-validator/-/card-validator-5.0.0.tgz#3cbaf6ee677b5727ffe5236f826dc1390e14867d"
   dependencies:
-    credit-card-type "^6.0.0"
+    credit-card-type "^7.0.0"
 
 caseless@~0.12.0:
   version "0.12.0"
@@ -1484,9 +1484,9 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-credit-card-type@6.1.0, credit-card-type@^6.0.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/credit-card-type/-/credit-card-type-6.1.0.tgz#f1acd3d47cf8202a66b60a9c90cbf9738d57ef40"
+credit-card-type@7.1.0, credit-card-type@^7.0.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/credit-card-type/-/credit-card-type-7.1.0.tgz#8b367c7e5a0bcb59aa12826e684b8963718f2221"
 
 cross-spawn@^5.0.1, cross-spawn@^5.1.0:
   version "5.1.0"
@@ -2431,9 +2431,9 @@ forwarded@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/forwarded/-/forwarded-0.1.2.tgz#98c23dab1175657b8c0573e8ceccd91b0ff18c84"
 
-framebus@2.0.8:
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/framebus/-/framebus-2.0.8.tgz#01c7ee5f765beb3f9a2e0390ca0b7088b2bf76d3"
+framebus@3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/framebus/-/framebus-3.0.1.tgz#dbabc3b08e39bf33d248e9af754bd8ffb05cfcce"
 
 fresh@0.5.2:
   version "0.5.2"
@@ -4309,9 +4309,9 @@ progress@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.0.tgz#8a1be366bf8fc23db2bd23f10c6fe920b4389d1f"
 
-promise-polyfill@6.0.2:
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/promise-polyfill/-/promise-polyfill-6.0.2.tgz#d9c86d3dc4dc2df9016e88946defd69b49b41162"
+promise-polyfill@8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/promise-polyfill/-/promise-polyfill-8.0.0.tgz#b47c7fc74052cc5b2132b703cca144f1a5eb56ef"
 
 promise@^7.1.1:
   version "7.3.1"
@@ -4324,6 +4324,13 @@ prop-types@^15.6.0:
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.0.tgz#ceaf083022fc46b4a35f69e13ef75aed0d639856"
   dependencies:
     fbjs "^0.8.16"
+    loose-envify "^1.3.1"
+    object-assign "^4.1.1"
+
+prop-types@^15.6.2:
+  version "15.6.2"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
+  dependencies:
     loose-envify "^1.3.1"
     object-assign "^4.1.1"
 
@@ -4451,14 +4458,14 @@ react-addons-test-utils@^15.6.2:
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/react-addons-test-utils/-/react-addons-test-utils-15.6.2.tgz#c12b6efdc2247c10da7b8770d185080a7b047156"
 
-react-dom@^16.2.0:
-  version "16.2.0"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.2.0.tgz#69003178601c0ca19b709b33a83369fe6124c044"
+react-dom@^16.4.1:
+  version "16.5.2"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.5.2.tgz#b69ee47aa20bab5327b2b9d7c1fe2a30f2cfa9d7"
   dependencies:
-    fbjs "^0.8.16"
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-    prop-types "^15.6.0"
+    prop-types "^15.6.2"
+    schedule "^0.5.0"
 
 react-reconciler@^0.7.0:
   version "0.7.0"
@@ -4477,14 +4484,14 @@ react-test-renderer@^16.0.0-0, react-test-renderer@^16.2.0:
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
-react@^16.2.0:
-  version "16.2.0"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.2.0.tgz#a31bd2dab89bff65d42134fa187f24d054c273ba"
+react@^16.4.1:
+  version "16.5.2"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.5.2.tgz#19f6b444ed139baa45609eee6dc3d318b3895d42"
   dependencies:
-    fbjs "^0.8.16"
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-    prop-types "^15.6.0"
+    prop-types "^15.6.2"
+    schedule "^0.5.0"
 
 read-pkg-up@^1.0.1:
   version "1.0.1"
@@ -4803,6 +4810,12 @@ sane@^2.0.0:
 sax@^1.2.1:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
+
+schedule@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/schedule/-/schedule-0.5.0.tgz#c128fffa0b402488b08b55ae74bb9df55cc29cc8"
+  dependencies:
+    object-assign "^4.1.1"
 
 select-hose@^2.0.0:
   version "2.0.0"

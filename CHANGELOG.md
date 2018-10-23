@@ -1,3 +1,8 @@
+#### 0.1.1 on October 23 2018
+
+- Add options prop
+- Update React
+
 #### 0.1.0 on January 08 2018
 
 - Use React 16 [#9](https://github.com/kovndr/braintree-dropin-react/pull/9) (safinn)

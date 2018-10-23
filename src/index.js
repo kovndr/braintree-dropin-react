@@ -47,15 +47,17 @@ class BraintreeDropIn extends React.Component {
   }
 
   setup = () => {
-    this.props.braintree.create({
-      authorization: this.props.authorizationToken,
-      container: '.braintree-dropin-react-form',
+    const options = {
       locale: this.props.locale,
       paypal: this.props.paypal,
       paypalCredit: this.props.paypalCredit,
       paymentOptionPriority: this.props.paymentOptionPriority,
-      card: this.props.card
-    }, (err, dropinInstance) => {
+      card: this.props.card,
+      ...this.props.options,
+      authorization: this.props.authorizationToken,
+      container: '.braintree-dropin-react-form'
+    }
+    this.props.braintree.create(options, (err, dropinInstance) => {
       if (err) {
         if (this.props.onError) {
           this.props.onError(err)
@@ -146,6 +148,7 @@ class BraintreeDropIn extends React.Component {
 
 BraintreeDropIn.propTypes = {
   braintree: PropTypes.object.isRequired,
+  options: PropTypes.object,
   authorizationToken: PropTypes.string.isRequired,
   handlePaymentMethod: PropTypes.func.isRequired,
   onCreate: PropTypes.func,
